@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fcard</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+</head>
+
+<body>
+	<!-- Loading Start -->
+	<div class="loading" id="loading">
+		<div class="logo_box">
+			<div class="wave"></div>
+			<i class="fas fa-utensils"></i>
+		</div>
+		<h2>Fcard</h2>
+		<span>Loading...</span>
+	</div>
+	<!-- Loading End -->
+
+	<!-- Navbar Start -->
+	<div class="nav" id="nav">
+		<a href="#top"><i class="fas fa-utensils"></i></a>
+		<div class="nav_group">
+			<a href="#select" class="nav_item">篩選</a>
+			<a href="#map" class="nav_item">Fcard</a>
+			<a href="#footer" class="nav_item">資源</a>
+		</div>
+	</div>
+	<!-- Navbar End -->
+
+	<!-- Main Start -->
+	<div class="main_box" id="top">
+		<div class="bg"></div>
+		<div class="main">
+			<div class="main_title">
+				<h1>Is It Good to Eat?</h1>
+				<p>A web of delicacy</p>
+			</div>
+		</div>
+	</div>
+	<!-- Main End -->
+
+	<!-- Select Start -->
+	<div>
+		<div class="select_box" id="select">
+			<div class="select_item">
+				<div class="title">地區:</div>
+				<div class="custom-select">
+					<select name="" id="city">
+						<option value="0">-全部-</option>
+						<option value="台北">台北-全部區</option>
+						<option value="信義">台北-信義區</option>
+						<option value="中山">台北-中山區</option>
+						<option value="台北其他">台北-其他區</option>
+						<option value="新北">新北-全部區</option>
+					</select>
+				</div>
+			</div>
+			<div class="select_item">
+				<div class="title">價位:</div>
+				<div class="custom-select">
+					<select name="" id="price">
+						<option value="0">-全部-</option>
+						<option value="1">500 元以內</option>
+						<option value="2">400 元以內</option>
+						<option value="3">300 元以內</option>
+						<option value="4">200 元以內</option>
+						<option value="5">100 元以內</option>
+					</select>
+				</div>
+			</div>
+			<!-- <div class="select_item">
+				<label class="container">近捷運站
+					<input id="mrt" type="checkbox" value="mrt" name="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">提供wifi
+					<input id="wifi" type="checkbox" value="wifi" name="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">不限時
+					<input id="noTimeLimit" type="checkbox" value="noTimeLimit" name="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">輕食
+					<input id="lightMeal" type="checkbox" value="lightMeal" name="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">早午餐
+					<input id="brunch" type="checkbox" value="brunch" name="checkbox">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">咖啡廳
+					<input id="cafe" type="checkbox" value="cafe" name="checkbox">
+					<span class="checkmark"></span>
+				</label>
+			</div> -->
+		</div>
+	</div>
+	<!-- Select End -->
+
+	<!-- FoodCard Start -->
+	<div class="foodCard" id="foodCard">
+		<div class="wrapper">
+			<div class="my-slider" id="slider">
+				<div class="foodCard_card">
+					<div class="foodCard_box">
+						<div class="pic">
+							<img src="" alt="">
+						</div>
+						<div class="text">1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FoodCard End -->
+
+	<!-- Map Start -->
+	<div class="map" id="map">
+		<div class="wrapper">
+			<div class="bigFoodCard_box">
+				<div class="bigFoodCard">
+					<div id="slide">
+						<img src="images/0.jpg" />
+					</div>
+					<div class="detail_box" id="detail_box">
+						<h2>九天</h2>
+						<p>價位：$40 ~ $179</p>
+						<p>營業時間：11:00-21:00 (星期二、三公休)</p>
+						<p>聯絡電話：0958-091-799</p>
+						<p>地址：新北市三峽區中山路459巷201號</p>
+						<a href="https://www.facebook.com/nineskyniceguy" target="_blank" class="detail_more">更多資訊請點此</a>
+						<div class="select_item" id="select_item">
+							<label class="container">提供wifi
+								<input type="checkbox" onclick="return false" checked>
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">不限時
+								<input type="checkbox" onclick="return false" checked>
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">咖啡廳
+								<input type="checkbox" onclick="return false" checked>
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map_box">
+				<div id="map_canvas"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Map End -->
+
+	<!-- Footer Start -->
+	<div id="footer">
+		<div class="wrapper">
+			<h3>資訊及圖片來源</h3>
+			<br>
+			<p><a href="https://www.google.com.tw/maps" target="_blank">Google Map</a> | </p>
+			<p><a href="https://www.facebook.com/nineskyniceguy" target="_blank">NineSky 九天</a> | </p>
+			<p><a href="https://www.facebook.com/loosedaycafe/" target="_blank">曰曰咖啡</a> | </p>
+			<p><a href="https://www.facebook.com/guangyixuji/" target="_blank">光一旅集</a> | </p>
+			<p><a href="https://www.facebook.com/HaoXiuKaffe/" target="_blank">好休咖啡</a> | </p>
+			<p><a href="https://www.facebook.com/pg/hoochuu" target="_blank">好初Deˇli</a> | </p>
+			<p><a href="https://melangecafe.com.tw" target="_blank">Melange Café 米朗琪咖啡館</a> | </p>
+			<p><a href="https://www.facebook.com/missenergy23881679/" target="_blank">Miss Energy低GI廚房</a> | </p>
+			<p><a href="https://www.instagram.com/sprout_tianmu/?utm_source=ig_embed" target="_blank">Sprout初芽</a> | </p>
+			<p><a href="https://www.facebook.com/vegshifu/" target="_blank">拾福青果</a> | </p>
+			<p><a href="https://www.facebook.com/MygogoBreakfast/" target="_blank">蛋打發號</a> | </p>
+			<p><a href="https://www.journeykaffe.org" target="_blank">Journey Kaffe覺旅咖啡</a> | </p>
+			<p><a href="https://www.facebook.com/MUKObrunch/" target="_blank">Muko Brunch</a> | </p>
+			<p><a href="https://www.facebook.com/27277786Nn/posts/1996607060430131" target="_blank">N+n 喫早餐</a> | </p>
+			<p><a href="http://www.nybagelscafe.com/" target="_blank">NY BAGELS CAFE</a> | </p>
+			<p><a href="https://www.facebook.com/CoppiiLumiiJM/" target="_blank">Coppii Lumii living coffee 冉冉生活</a></p>
+			<h4>© 2019 NTPU WebPlanning Team6</h4>
+		</div>
+
+	</div>
+	<!-- Footer End -->
+
+</body>
+
+<!-- JS File -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="plugin/js/fontawesome.min.js"></script>
+<script src="plugin/js/brands.min.js"></script>
+<script src="plugin/js/solid.min.js"></script>
+<!-- Google map -->
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_xrySG3MlQuGCwglYYeXztFQehgNGDbw&libraries=geometry,places"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script>
+	var slider = tns({
+		container: '.my-slider',
+		"items": 5,
+		"slideBy": "page",
+		"mouseDrag": true,
+		"swipeAngle": false,
+		"speed": 400,
+		"gutter": 20,
+		"autoplay": true,
+		"autoplayButtonOutput": false,
+		"navPosition": 'bottom',
+		"controls": false,
+		responsive: {
+			100: {
+				items: 1
+			},
+			415: {
+				items: 2
+			},
+			640: {
+				edgePadding: 20,
+				items: 2
+			},
+			700: {
+				gutter: 30,
+				items: 3
+			},
+			1440: {
+				items: 4
+			},
+			1600: {
+				edgePadding: 0,
+			}
+		},
+		preventScrollOnTouch: 'auto'
+	});
+</script>
+
+<script src="js/main.js"></script>
+
+
+</html>
